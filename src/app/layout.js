@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/Sidebar";
+import TopBar from "@/components/TopBar";
+import AuthProvider from "@/context/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +14,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-[#191919] text-white`}>
+        <AuthProvider>
+          <div className="grid grid-cols-12">
+            <div className="col-span-12 md:col-span-2">
+              <Sidebar />
+            </div>
+            <div className="col-span-12 md:col-span-10 p-5">
+              <TopBar />
+              {children}
+            </div>
+          </div>
+        </AuthProvider>
+      </body>
     </html>
   );
 }

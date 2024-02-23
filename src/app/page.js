@@ -1,8 +1,12 @@
+import Banner from "@/components/Banner";
+import Category from "@/components/Category";
+
 const Home = () => {
   return (
-    <div>
-      <h1 className="text-center">Welcome</h1>
-    </div>
+    <>
+      <Banner />
+      <Category />
+    </>
   );
 };
 
