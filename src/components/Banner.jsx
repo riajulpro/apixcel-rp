@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="relative min-h-60 md:max-h-60 mb-3 overflow-hidden">
+    <div className="relative md:min-h-60 md:max-h-60 mb-3 overflow-hidden">
       <Image
         src={"https://i.ibb.co/93FZkhb/apixcel-home-banner.png"}
         alt="banner"

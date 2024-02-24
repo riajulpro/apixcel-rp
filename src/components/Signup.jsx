@@ -84,7 +84,7 @@ const SignUp = () => {
           />
         </div>
         {error && <div>{error}</div>}
-        <button type="submit" className="w-full max-w-sm py-2 bg-sidebar">
+        <button type="submit" className="py-2 bg-slate-900 rounded-full px-10">
           Sign Up
         </button>
       </form>
