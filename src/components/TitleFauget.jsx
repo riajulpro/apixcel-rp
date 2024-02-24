@@ -11,7 +11,7 @@ const TitleFauget = () => {
   return (
     <div>
       <div
-        className={`${niconne.className} p-3 text-lg flex items-center gap-1`}
+        className={`${niconne.className} p-3 text-lg flex items-center gap-1 mt-5 md:mt-0`}
       >
         <GiMusicSpell /> Fauget
       </div>

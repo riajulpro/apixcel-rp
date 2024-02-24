@@ -1,11 +1,12 @@
-import { getAllPodcast } from "@/lib/getPodcstData";
+import PodcastCardContainer from "@/components/PodcastCardContainer";
+import { getAllPodcast } from "@/lib/getPodcastData";
 
 const Podcast = async () => {
   const podcasts = await getAllPodcast();
 
   return (
     <div>
-      <h1>Podcast</h1>
+      <PodcastCardContainer podcasts={podcasts} startPoint={0} />
     </div>
   );
 };

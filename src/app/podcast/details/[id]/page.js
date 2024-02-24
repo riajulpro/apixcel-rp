@@ -1,7 +1,14 @@
-const PodcastDetails = ({ params: { id } }) => {
+import SinglePodcastDetails from "@/components/SinglePodcastDetails";
+import { getSinglePodcast } from "@/lib/getPodcastData";
+
+const PodcastDetails = async ({ params: { id } }) => {
+  const singlePodcast = await getSinglePodcast(id);
+
   return (
     <div>
-      <h1>Podcast Details will be shown here: {id}</h1>
+      {singlePodcast.map((podcast) => (
+        <SinglePodcastDetails key={podcast.id} podcast={podcast} />
+      ))}
     </div>
   );
 };

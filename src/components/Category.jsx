@@ -26,7 +26,7 @@ const Category = () => {
   ];
 
   return (
-    <div className="flex flex-nowrap md:grid md:grid-cols-7 gap-2 mb-3 overflow-scroll md:overflow-auto scrollbar-hide md:scrollbar-auto">
+    <div className="px-3 md:px-0 flex flex-nowrap md:grid md:grid-cols-7 gap-2 mb-5 overflow-scroll md:overflow-auto scrollbar-hide md:scrollbar-auto">
       {categories.map((item) => (
         <button
           key={item.category}

@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
             <div className="col-span-12 md:col-span-2">
               <Sidebar />
             </div>
-            <div className="col-span-12 md:col-span-10 p-5">
+            <div className="col-span-12 md:col-span-10 md:p-5">
               <TopBar />
               {children}
             </div>
